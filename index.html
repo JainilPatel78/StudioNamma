@@ -4,56 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Studio Namma — a creative digital studio portfolio.">
+  <meta name="theme-color" content="#111111">
   <title>Studio Namma — Creative Studio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top">STUDIO<br>NAMMA<span>.</span></a>
+    <a class="brand" href="#top" aria-label="Studio Namma home">STUDIO<br>NAMMA<span>.</span></a>
     <nav aria-label="Main navigation">
       <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Toggle theme">◐</button>
+    <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">◐</button>
   </header>
-
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <p class="eyebrow">Independent creative studio · 2026</p>
-      <h1>We make <em>digital things</em> people remember.</h1>
+      <h1 id="hero-title">We make <em>digital things</em> people remember.</h1>
       <p class="hero-copy">Brand identity, web experiences and visual systems for ambitious ideas.</p>
       <a class="button" href="#work">Explore selected work ↓</a>
     </section>
-
-    <section id="work" class="section">
-      <div class="section-title"><span>01</span><h2>Selected work</h2></div>
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="section-title"><span>01</span><h2 id="work-title">Selected work</h2></div>
       <div class="work-grid">
-        <article class="project project-large"><div class="project-art art-one"></div><p>01 / Identity</p><h3>Form & Function</h3></article>
-        <article class="project"><div class="project-art art-two"></div><p>02 / Digital</p><h3>Night Shift</h3></article>
-        <article class="project"><div class="project-art art-three"></div><p>03 / Campaign</p><h3>Common Ground</h3></article>
+        <article class="project project-large"><div class="project-art art-one" role="img" aria-label="Abstract orange and black identity artwork"></div><p>01 / Identity</p><h3>Form & Function</h3></article>
+        <article class="project"><div class="project-art art-two" role="img" aria-label="Abstract green digital artwork"></div><p>02 / Digital</p><h3>Night Shift</h3></article>
+        <article class="project"><div class="project-art art-three" role="img" aria-label="Abstract monochrome campaign artwork"></div><p>03 / Campaign</p><h3>Common Ground</h3></article>
       </div>
     </section>
-
-    <section id="services" class="section services">
-      <div class="section-title"><span>02</span><h2>What we do</h2></div>
+    <section id="services" class="section services" aria-labelledby="services-title">
+      <div class="section-title"><span>02</span><h2 id="services-title">What we do</h2></div>
       <div class="service-list">
-        <div><strong>01</strong><span>Brand strategy & identity</span></div>
-        <div><strong>02</strong><span>Web design & development</span></div>
-        <div><strong>03</strong><span>Art direction & motion</span></div>
-        <div><strong>04</strong><span>Digital experiences</span></div>
+        <div><strong>01</strong><span>Brand strategy & identity</span></div><div><strong>02</strong><span>Web design & development</span></div><div><strong>03</strong><span>Art direction & motion</span></div><div><strong>04</strong><span>Digital experiences</span></div>
       </div>
     </section>
-
-    <section id="about" class="statement">
-      <p class="eyebrow">Small team. Big ideas.</p>
-      <h2>Good design should feel <em>obvious</em> after you see it.</h2>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div><p class="eyebrow">Have a project?</p><h2>Let's make something <em>worth seeing.</em></h2></div>
-      <a class="button" href="mailto:hello@studionamma.example">Start a conversation ↗</a>
-    </section>
+    <section id="about" class="statement" aria-labelledby="about-title"><p class="eyebrow">Small team. Big ideas.</p><h2 id="about-title">Good design should feel <em>obvious</em> after you see it.</h2></section>
+    <section id="contact" class="contact section" aria-labelledby="contact-title"><div><p class="eyebrow">Have a project?</p><h2 id="contact-title">Let's make something <em>worth seeing.</em></h2></div><a class="button" href="mailto:hello@studionamma.example">Start a conversation ↗</a></section>
   </main>
-
   <footer><span>© 2026 Studio Namma</span><span>Made with curiosity.</span></footer>
   <script src="script.js"></script>
 </body>
