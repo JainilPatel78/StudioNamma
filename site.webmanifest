@@ -1,0 +1,9 @@
+{
+  "name": "Studio Namma",
+  "short_name": "Namma",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "A creative digital studio portfolio.",
+  "background_color": "#111111",
+  "theme_color": "#111111"
+}
